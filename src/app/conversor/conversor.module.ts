@@ -1,9 +1,10 @@
 import { CommonModule } from '@angular/common';
-import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
+import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
 import { ConversorComponent } from './components';
-import { MoedaService, ConversorService } from './services';
+import { ConversorService, MoedaService } from './services';
 
 @NgModule({
   declarations: [
@@ -11,7 +12,8 @@ import { MoedaService, ConversorService } from './services';
   ],
   imports: [
     CommonModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   exports: [
     ConversorComponent
